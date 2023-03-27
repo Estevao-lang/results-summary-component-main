@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      color: hsl(0, 0%, 100%);
+      text-align: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .container {
+      background: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .esquerda,
+    .direita {
+      width: 30vw;
+      height: 50vh;
+      border-radius: 20px;
+    }
+
+    .esquerda {
+      background: linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%)) ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .direita {
+      background: wheat;
+    }
+
+    .resultado {
+      position: relative;
+      bottom: 5vh;
+    }
+
+    .circulo {
+      background: linear-gradient(hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 0));
+      border-radius: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 20vh;
+      width: 20vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-weight: 800;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="esquerda">
+
+      <div class="resultado">
+        Your Result
+      </div>
+
+      <div class="circulo">
+        <h1>76</h1>
+        of 100
+      </div>
+      <div class="textoTitulo">
+        Great
+
+      </div>
+      <div class="textoParagrafo">
+        You scored higher than 65% of the people who have taken these tests.
+      </div>
+
+    </div>
+    <div class="direita">
+      Summary
+
+      Reaction
+      80 / 100
+
+      Memory
+      92 / 100
+
+      Verbal
+      61 / 100
+
+      Visual
+      72 / 100
+
+      Continue
+
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
